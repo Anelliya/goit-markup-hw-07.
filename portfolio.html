@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./sass/base/normolize.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Studio. Эффективные решения для вашего бизнеса</title>
@@ -13,21 +13,22 @@
 
 <body class="body">
     <!--Шапка сайта-->
-    <header class="header border">
-        <div class="container ">
+
+    <header class="header  border">
+        <div class="container">
             <nav class="main-nav">
                 <a class="logo-text link" lang="en" href="./index.html"> Web<span>Studio</span></a>
-                <button type="button" class="mobile-button" data-menu-button aria-expanded="false"
+                <button type="button" class="mobile-button " data-menu-button aria-expanded="true"
                     aria-controls="main-nav-wrapper">
                     <svg width="24" height="16" aria-label="Переключатель мобильного меню">
                         <use class="menu-icon" href="./images/sprite.svg#menu_icon"></use>
                         <use class="close-icon" href="./images/sprite.svg#close_icon"></use>
                     </svg>
                 </button>
-                <div class="main-nav-wrapper" data-menu id="main-nav-wrapper">
-                    <ul class="navigation-list list">
+                <div class="main-nav-wrapper " data-menu id="main-nav-wrapper">
+                    <ul class=" navigation-list list">
                         <li class="navigation-item">
-                            <a class="link mobi-size-studio" href="./index.html">Студия</a>
+                            <a class="link mobi-size-studio  " href="./index.html">Студия</a>
                         </li>
                         <li class="navigation-item">
                             <a class="link mobi-size-portfolio mobi-size activ-link-color"
@@ -38,27 +39,22 @@
                         </li>
                     </ul>
                     <div class="contacts-block">
-                        <ul>
-                            <li class="element-container">
-                                <a class="mail link" href="mailto:info@devstudio.com">
-                                    <svg class="mail-pic element-pic">
-                                        <use href="./images/sprite.svg#mail"></use>
-                                    </svg>
-                                    info@devstudio.com
-                                </a>
-                            </li>
-                            <li class="element-container">
-                                <a class="phone link" href="tel:+380961111111">
-                                    <svg class="phone-pic element-pic">
-                                        <use href="./images/sprite.svg#phone"></use>
-                                    </svg>
-                                    +38 096 111 11 11
-                                </a>
-                            </li>
-                        </ul>
+                        <a class="mail link element-container" href="mailto:info@devstudio.com">
+                            <svg class="mail-pic element-pic">
+                                <use href="./images/sprite.svg#mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                        <a class="phone link element-container" href="tel:+380961111111">
+                            <svg class="phone-pic element-pic">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </div>
                 </div>
             </nav>
+
         </div>
     </header>
 
@@ -303,18 +299,17 @@
                 </ul>
             </section>
             <section class="subscription-block">
+                <h2 hidden>subscription-block</h2>
                 <b class="subscription-block-label">
-                    Подпишитесь на рассылку
-                </b>
-                <div class="subscription-block-wrapper">
+                    Подпишитесь на рассылку </b>
+                <form class="subscription-block-wrapper">
                     <input class="mail-field " type="email" name="email" placeholder="E-mail">
                     <button class="submit-button" type="submit">Подписаться
                         <svg class="submit-pic">
                             <use href="./images/sprite.svg#send-pic"></use>
                         </svg>
                     </button>
-                </div>
-
+                </form>
             </section>
         </div>
     </footer>

@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./sass/base/normolize.css" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Studio. Эффективные решения для вашего бизнеса</title>
@@ -38,22 +38,18 @@
                         </li>
                     </ul>
                     <div class="contacts-block">
-                        <div class="element-container">
-                            <a class="mail link" href="mailto:info@devstudio.com">
-                                <svg class="mail-pic element-pic">
-                                    <use href="./images/sprite.svg#mail"></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </div>
-                        <div class="element-container">
-                            <a class="phone link" href="tel:+380961111111">
-                                <svg class="phone-pic element-pic">
-                                    <use href="./images/sprite.svg#phone"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
-                        </div>
+                        <a class="mail link element-container" href="mailto:info@devstudio.com">
+                            <svg class="mail-pic element-pic">
+                                <use href="./images/sprite.svg#mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                        <a class="phone link element-container" href="tel:+380961111111">
+                            <svg class="phone-pic element-pic">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -129,149 +125,158 @@
                         <img class="our-team-pic"
                             srcset="./images/team/igor_demjanenko.jpg 1x, ./images/team/igor_demjanenko@2x.jpg 2x, ./images/team/igor_demjanenko@3x.jpg 3x"
                             src="./images/team/igor_demjanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                        <h3 class="name">Игорь Демьяненко</h3>
-                        <p class="position" lang="en">Product Designer</p>
-                        <ul class="social-list list">
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="instagram" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="twitter" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="facebook" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="our-team-item">
+                            <h3 class="name">Игорь Демьяненко</h3>
+                            <p class="position" lang="en">Product Designer</p>
+                            <ul class="social-list list">
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="instagram" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
                     </li>
                     <li class="our-team-list">
                         <img class="our-team-pic"
                             srcset="./images/team/olga_repina.jpg 1x, ./images/team/olga_repina@2x.jpg 2x, ./images/team/olga_repina@3x.jpg 3x"
                             src="./images/team/olga_repina.jpg" alt="Ольга Репина" width="270" height="260">
-                        <h3 class="name">Ольга Репина</h3>
-                        <p class="position" lang="en">Frontend Developer</p>
-                        <ul class="social-list list">
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="twitter" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="facebook" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="our-team-item">
+                            <h3 class="name">Ольга Репина</h3>
+                            <p class="position" lang="en">Frontend Developer</p>
+                            <ul class="social-list list">
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="our-team-list">
                         <img class="our-team-pic"
                             srcset="./images/team/nikolay_tarasov.jpg 1x, ./images/team/nikolay_tarasov@2x.jpg 2x, ./images/team/nikolay_tarasov@3x.jpg 3x"
                             src="./images/team/nikolay_tarasov.jpg" alt="Николай Тарасов" width="270" height="260">
-                        <h3 class="name">Николай Тарасов</h3>
-                        <p class="position" lang="en">Marketing</p>
-                        <ul class="social-list list">
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="twitter" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="facebook" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="our-team-item">
+                            <h3 class="name">Николай Тарасов</h3>
+                            <p class="position" lang="en">Marketing</p>
+                            <ul class="social-list list">
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="our-team-list">
                         <img class="our-team-pic"
                             srcset="./images/team/mihail_ermakov.jpg 1x, ./images/team/mihail_ermakov@2x.jpg 2x, ./images/team/mihail_ermakov@3x.jpg 3x"
                             src="./images/team/mihail_ermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
-                        <h3 class="name">Михаил Ермаков</h3>
-                        <p class="position" lang="en">UI Designer</p>
-                        <ul class="social-list list">
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="twitter" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="facebook" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list-margin" lang="en">
-                                <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
-                                    <svg class="social-items">
-                                        <use href="./images/sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="our-team-item">
+                            <h3 class="name">Михаил Ермаков</h3>
+                            <p class="position" lang="en">UI Designer</p>
+                            <ul class="social-list list">
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="inatagram" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="twitter" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="facebook" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list-margin" lang="en">
+                                    <a class="social-list-item" href="" aria-label="linkedIn" target="_blank">
+                                        <svg class="social-items">
+                                            <use href="./images/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -295,25 +300,29 @@
                             <svg class="clients-pic" width="40" height="52">
                                 <use href="./images/sprite.svg#client-2"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="clients-list">
                         <a class="clients-link" href="" target="_blank">
                             <svg class="clients-pic" width="41" height="42">
                                 <use href="./images/sprite.svg#client-3"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="clients-list">
                         <a class="clients-link" href="" target="_blank">
                             <svg class="clients-pic" width="80" height="42">
                                 <use href="./images/sprite.svg#client-4"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="clients-list">
                         <a class="clients-link" href="" target="_blank">
                             <svg class="clients-pic" width="59" height="47">
                                 <use href="./images/sprite.svg#client-5"></use>
                             </svg>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="clients-list"><a class="clients-link" href="" target="_blank">
                             <svg class="clients-pic" width="88" height="45">
                                 <use href="./images/sprite.svg#client-6"></use>
@@ -339,7 +348,7 @@
             </section>
             <!--Социальные сети-->
             <section class="join">
-                <h2 class="join-header">Присоединяйтесь</h2>
+                <b class="join-header">Присоединяйтесь</b>
                 <ul class="list" lang="en">
                     <li class="join-item">
                         <a class="social-list-item" href="" aria-label="instagram" target="_blank">
@@ -371,17 +380,17 @@
                 </ul>
             </section>
             <section class="subscription-block">
-                 <h2 hidden>subscription-block</h2>
+                <h2 hidden>subscription-block</h2>
                 <b class="subscription-block-label">
                     Подпишитесь на рассылку </b>
-                <div class="subscription-block-wrapper">
+                <form class="subscription-block-wrapper">
                     <input class="mail-field " type="email" name="email" placeholder="E-mail">
                     <button class="submit-button" type="submit">Подписаться
                         <svg class="submit-pic">
                             <use href="./images/sprite.svg#send-pic"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
             </section>
         </div>
     </footer>

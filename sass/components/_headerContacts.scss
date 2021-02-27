@@ -1,17 +1,17 @@
 .contacts-block {
   @media screen and (max-width: 767px) {
-    text-align: center;
+    text-align    : center;
     padding-bottom: 49px;
   }
 
   @media screen and (min-width: 768px) {
     align-items: center;
-    padding: 21px 0;
+    padding    : 21px 0;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 0;
-    display: flex;
+    padding        : 0;
+    display        : flex;
     justify-content: space-between;
   }
 
@@ -21,60 +21,58 @@
 
   .element-pic {
     vertical-align: middle;
-    margin-right: 10px;
-    fill: $color-text-grey;
+    margin-right  : 10px;
+    fill          : $color-text-grey;
 
     @media screen and (min-width: 768px) {
       margin-right: 8px;
     }
 
     @media screen and (min-width: 1200px) {
-      padding: 20px 0px;
+      padding     : 20px 0px;
       margin-right: 10px;
     }
   }
 
   .element-container {
-    display: flex;
-    justify-content: center;
-
     &:hover .element-pic {
-      fill: $color-accent;
+      fill  : $color-accent;
       cursor: pointer;
     }
   }
 
   .mail {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.16;
+    margin-bottom : 10px;
+    font-weight   : 500;
+    font-size     : 18px;
+    line-height   : 1.16;
     letter-spacing: 0.02em;
-    color: $color-text-grey;
-    transition: color 250ms linear;
+    color         : $color-text-grey;
+    transition    : color 250ms linear;
 
     @media screen and (min-width: 768px) {
       font-size: 12px;
     }
+
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
-      margin-right: $margin-right;
-      font-size: $font-size-main;
-      line-height: 1.14;
+      margin-right : $margin-right;
+      font-size    : $font-size-main;
+      line-height  : 1.14;
     }
 
     &-pic {
       transition: fill 250ms linear;
-      width: 16px;
-      height: 12px;
+      width     : 16px;
+      height    : 12px;
 
       @media screen and (min-width: 768px) {
-        width: 14px;
+        width : 14px;
         height: 10px;
       }
 
       @media screen and (min-width: 1200px) {
-        width: 16px;
+        width : 16px;
         height: 12px;
       }
     }
@@ -82,41 +80,42 @@
     &:hover,
     &:focus {
       color: $color-accent;
-      fill: $color-accent;
+      fill : $color-accent;
     }
   }
 
   .phone {
-    align-items: flex-end;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.14;
+    align-items   : flex-end;
+    font-weight   : 500;
+    font-size     : 18px;
+    line-height   : 1.14;
     letter-spacing: 0.02em;
-    color: $color-text-grey;
-    transition: color 250ms linear;
+    color         : $color-text-grey;
+    transition    : color 250ms linear;
 
     @media screen and (min-width: 768px) {
       font-size: 12px;
     }
 
     @media screen and (min-width: 1200px) {
-      font-size: $font-size-main;
+      font-size  : $font-size-main;
       line-height: 1.14;
     }
 
     &-pic {
       transition: fill 250ms linear;
-      width: 10px;
-      height: 15px;
+      width     : 10px;
+      height    : 15px;
+
       @media screen and (min-width: 1200px) {
-        width: 10px;
+        width : 10px;
         height: 16px;
       }
     }
 
     &:hover,
     &:focus {
-      color: $color-accent;
+      color     : $color-accent;
       transition: color 250ms linear;
     }
   }
